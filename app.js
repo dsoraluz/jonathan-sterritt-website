@@ -6,9 +6,11 @@ const cookieParser = require('cookie-parser');
 const bodyParser   = require('body-parser');
 const layouts      = require('express-ejs-layouts');
 const mongoose     = require('mongoose');
+const dotenv       = require('dotenv');
 
+dotenv.config();
 
-mongoose.connect('mongodb://localhost/jonathan-sterritt-website');
+mongoose.connect(process.env.MONGODB_URI);
 
 const app = express();
 
