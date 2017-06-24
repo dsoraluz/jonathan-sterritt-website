@@ -113,5 +113,10 @@ nav {
 
 #contact {
   background: #9a9a9a;
-  min-height: 750px;
+  min-height: 820px;
+}
+
+body[data-scrollspy-active="actor"] .navbar-fixed ul>li>a {
+  color: #737373;
+  border-color: #737373;
 }
