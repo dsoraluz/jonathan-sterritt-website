@@ -50,6 +50,17 @@ nav {
     z-index: 1030;
 }
 
+.side-nav{
+  background-color: #f3997b;
+  li{
+    a{
+      font-size: 40px;
+      line-height: 70px;
+      padding: 50px 32px;
+    }
+  }
+}
+
 #footer {
   background-color: #303030;
   min-height: 100px;
