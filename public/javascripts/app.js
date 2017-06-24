@@ -24,16 +24,21 @@ $(document).ready(()=>{
     });
 
   $(".button-collapse").sideNav();
+
+  $(".side-nav li>a").click(()=>{
+    $('.button-collapse').sideNav('hide');
+  });
+
   $(document).on('scroll', ()=>{
 
     if ($(this).scrollTop()>=$('#contact').position().top) {
-      $(".navbar-fixed li>a").css({"color": "#fff", "border-color": "#fff"});
+      $(".navbar li>a").css({"color": "#fff", "border-color": "#fff"});
       $("#social-media").css("color", "#fff");
     } else if ($(this).scrollTop()>=$('#actor').position().top){
-      $(".navbar-fixed li>a").css({"color": "#737373", "border-color": "#737373"});
+      $(".navbar li>a").css({"color": "#737373", "border-color": "#737373"});
       $("#social-media").css("color", "#737373");
     } else {
-      $(".navbar-fixed li>a").css({"color": "#fff", "border-color": "#fff"});
+      $(".navbar li>a").css({"color": "#fff", "border-color": "#fff"});
       $("#social-media").css("color", "#fff");
     }
   });
