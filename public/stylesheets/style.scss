@@ -69,8 +69,27 @@ nav {
 #home {
   // position: relative;
   // top: 0;
-  min-height: 800px;
+  min-height: 1000px;
   background: #1e2230 url(../images/home-background.jpg) no-repeat center bottom;
+
+  .ability-section {
+    padding: 250px 20px;
+    margin-top: 300px;
+    margin-left: 13%;
+    position: absolute;
+    background: #E63215;
+    min-height: 600px;
+    width: 75%;
+    span {
+      font-size: 24px;
+      color: white;
+    }
+  }
+}
+
+#bio {
+  background: #F8F8F8;
+  min-height: 750px;
 }
 
 #events {
@@ -79,16 +98,54 @@ nav {
 
 }
 
-#host {
+#actor {
   background: #2f2f2f url(../images/host-background.jpg) no-repeat center top;
   background-size: cover;
   min-height: 750px;
+  h3 {
+    color: #fff;
+  }
+  p {
+    color: white;
+  }
+
+  .collapsible {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    box-shadow: none;
+  }
+
+  .collapsible-header {
+    color: #fff;
+    background-color: inherit;
+    border-top: 1px solid #ddd;
+    border-bottom: none;
+
+    i {
+      color: #E63215;
+    }
+  }
+
+  .collapsible-body {
+    color: #fff;
+    border-top: 1px solid #ddd;
+  }
 }
 
-#actor {
+#host {
   background: #f7bdaa url(../images/actor-background.jpg) no-repeat center top;
   background-size: cover;
-  min-height: 750px;
+  min-height: 950px;
+
+  #microman {
+    // height: 100%;
+    position: absolute;
+    padding-right: 100px;
+    right: 0;
+    top: 80px;
+  }
 
 }
 
@@ -124,7 +181,7 @@ nav {
 
 #contact {
   background: #9a9a9a;
-  min-height: 820px;
+  min-height: 870px;
 }
 
 body[data-scrollspy-active="actor"] .navbar-fixed ul>li>a {

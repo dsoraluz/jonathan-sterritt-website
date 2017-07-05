@@ -51,7 +51,7 @@ $(document).ready(()=>{
 
       $(".navbar li>a").css({"color": "#737373", "border-color": "#737373"});
       $("#social-media").css("color", "#737373");
-    }else if ($(this).scrollTop()>=$('#actor').position().top){
+    }else if ($(this).scrollTop()>=$('#host').position().top){
 
       navItems.forEach((item)=>{
         item.classList.remove("selected");
@@ -61,7 +61,7 @@ $(document).ready(()=>{
 
       $(".navbar li>a").css({"color": "#737373", "border-color": "#737373"});
       $("#social-media").css("color", "#737373");
-    } else if ($(this).scrollTop()>=$('#host').position().top){
+    } else if ($(this).scrollTop()>=$('#actor').position().top){
 
       navItems.forEach((item)=>{
         item.classList.remove("selected");
@@ -72,12 +72,19 @@ $(document).ready(()=>{
       $(".navbar li>a").css({"color": "#fff", "border-color": "#fff"});
       $("#social-media").css("color", "#fff");
     } else if ($(this).scrollTop()>=$('#events').position().top){
-
       navItems.forEach((item)=>{
         item.classList.remove("selected");
       });
 
       $(navItems[1]).addClass("selected");
+      
+      $(".navbar li>a").css({"color": "#fff", "border-color": "#fff"});
+      $("#social-media").css("color", "#fff");
+    } else if ($(this).scrollTop()>=$('#bio').position().top){
+
+      $(".navbar li>a").css({"color": "#737373", "border-color": "#737373"});
+      $("#social-media").css("color", "#737373");
+
     } else {
 
       navItems.forEach((item)=>{
