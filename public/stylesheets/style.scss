@@ -179,10 +179,31 @@ nav {
   }
 }
 
+
 #contact {
   background: #9a9a9a;
   min-height: 870px;
+
+  .contact-header {
+    font-size: 50px;
+    color: #434343;
+  }
+
+
+  .contact-items {
+    i {
+      color: #434343;
+      font-size: 4em;
+    }
+    span {
+      font-size: 18px;
+      color: #fff;
+      padding-top: 10px;
+      display: block;
+    }
+  }
 }
+
 
 body[data-scrollspy-active="actor"] .navbar-fixed ul>li>a {
   color: #737373;
