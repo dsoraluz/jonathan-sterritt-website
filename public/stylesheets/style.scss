@@ -73,16 +73,30 @@ nav {
   background: #1e2230 url(../images/home-background.jpg) no-repeat center bottom;
 
   .ability-section {
-    padding: 250px 20px;
-    margin-top: 300px;
-    margin-left: 13%;
+    padding: 150px 20px;
+    margin: 50px auto;
+    left: 0;
+    right: 0;
     position: absolute;
     background: #E63215;
     min-height: 600px;
     width: 75%;
+    border: 10px solid #000;
+
+    img {
+      width: 50%;
+      border: 10px solid #000;
+    }
+
     span {
       font-size: 24px;
-      color: white;
+      color: #fff;
+      text-shadow:
+      -1px -1px 0 #000,
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+      1px 1px 0 #000;
+
     }
   }
 }
@@ -90,6 +104,11 @@ nav {
 #bio {
   background: #F8F8F8;
   min-height: 750px;
+
+  img {
+    width: 75%;
+    border: 10px solid #000;
+  }
 }
 
 #events {
@@ -107,6 +126,17 @@ nav {
   }
   p {
     color: white;
+  }
+
+  .resume-list {
+    line-height: 1.5;
+  }
+  .resume-list-heading {
+    /*border-bottom: 1px solid #fff;
+    padding-bottom: 2px;*/
+  }
+  .special-skill-list {
+    border-top: 0 !important;
   }
 
   .collapsible {
@@ -154,6 +184,7 @@ nav {
   background: #e5e5e5 url(../images/production-background.jpg) no-repeat center top;
   background-size: cover;
   min-height: 780px;
+/*color: #737373;*/
 
   .photo-element {
     position: absolute;
@@ -174,18 +205,103 @@ nav {
 
   #microphone {
     bottom: -175px;
-    left: 0;
+    left: -100px;
     z-index: 8;
   }
+
+  .bmp-logo {
+    width: 25%;
+    margin-bottom: 50px;
+  }
+
+  #bmp-bio {
+    p {
+      margin-bottom: 40px;
+      padding: 0 40px;
+      color: #737373;
+    }
+  }
+
+  .clip-list{
+    li {
+      position: relative;
+      background-color: #3091ce;
+      border: 2px solid #737373;
+      padding: 20px 0;
+      margin: 0 0 10px;
+      z-index: 10;
+    }
+  }
+
+  .collapsible {
+    // border-top: none;
+    // border-left: none;
+    // border-right: none;
+    // border-bottom: none;
+    // box-shadow: none;
+  }
+
+  .collapsible-header{
+    // color: #fff;
+    background-color: inherit;
+    border-top: 1px solid #ddd;
+    // border-bottom: none;
+
+    i {
+      color: #3091ce;
+    }
+  }
+
+
+
+  #equipment-rental {
+    padding: 0 40px;
+    color: #737373;
+
+    .equipment-list li{
+      text-align: left;
+      line-height: 1.5;
+    }
+  }
+
+  #bmp-contact {
+    margin-top: 40px;
+    color: #737373;
+
+    p{
+      font-size: 16px;
+    }
+
+    a {
+      color: #3091ce;
+    }
+  }
+
 }
+
+#quote {
+  background-color: #D7D5E6;
+  min-height: 870px;
+
+  .quote-paragraph {
+    line-height: 2.0;
+    text-align: left;
+    padding: 0 40px;
+  }
+}
+
 
 
 #contact {
   background: #9a9a9a;
   min-height: 870px;
 
+  img {
+    width: 100%;
+  }
+
   .contact-header {
-    font-size: 50px;
+    font-size: 9em;
     color: #434343;
   }
 
