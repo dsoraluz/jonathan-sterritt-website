@@ -331,6 +331,49 @@ nav {
       display: block;
     }
   }
+
+  input:not([type]), input[type=text],
+  input[type=password], input[type=email],
+  input[type=url], input[type=time],
+  input[type=date], input[type=datetime],
+  input[type=datetime-local], input[type=tel],
+  input[type=number], input[type=search],
+  textarea.materialize-textarea {
+    border-bottom: 1px solid #434343;
+  }
+
+  .input-field {
+    text-align: center;
+    label {
+      color: #434343;
+    }
+  }
+
+  input::-webkit-input-placeholder {
+    color: #434343 !important;
+  }
+
+  input:-moz-placeholder { /* Firefox 18- */
+    color: #434343 !important;
+  }
+
+  input::-moz-placeholder {  /* Firefox 19+ */
+    color: #434343 !important;
+  }
+
+  input:-ms-input-placeholder {
+    color: #434343 !important;
+  }
+
+  /* label focus color */
+  .input-field input[type=text]:focus + label {
+      color: #555;
+    }
+  /* label underline focus color */
+  .input-field input[type=text]:focus {
+     border-bottom: 1px solid #555;
+     box-shadow: 0 1px 0 0 #555;
+   }
 }
 
 
