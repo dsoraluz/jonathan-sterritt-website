@@ -1,5 +1,7 @@
 $(document).ready(()=>{
 
+  $(".modal").modal();
+
 
   $(".button-collapse").sideNav({
       menuWidth: 1000, // Default is 300
@@ -12,20 +14,6 @@ $(document).ready(()=>{
   $(".side-nav li>a").click(()=>{
     $('.button-collapse').sideNav('hide');
   });
-
-  // $(document).on('scroll', ()=>{
-  //
-  //   if ($(this).scrollTop()>=$('#contact').position().top) {
-  //     $(".navbar li>a").css({"color": "#fff", "border-color": "#fff"});
-  //     $("#social-media").css("color", "#fff");
-  //   } else if ($(this).scrollTop()>=$('#actor').position().top){
-  //     $(".navbar li>a").css({"color": "#737373", "border-color": "#737373"});
-  //     $("#social-media").css("color", "#737373");
-  //   } else {
-  //     $(".navbar li>a").css({"color": "#fff", "border-color": "#fff"});
-  //     $("#social-media").css("color", "#fff");
-  //   }
-  // });
 
   $(function() {
     $('a[href*=#]:not([href=#])').click(function() {
@@ -43,7 +31,6 @@ $(document).ready(()=>{
   $(document).on('scroll', ()=>{
 
     var navItems = document.querySelectorAll("a.nav-item");
-
     if ($(this).scrollTop()>=$('#contact').position().top) {
 
       navItems.forEach((item)=>{
@@ -53,7 +40,27 @@ $(document).ready(()=>{
       $(navItems[5]).addClass("selected");
 
       $(".navbar li>a").css({"color": "#fff", "border-color": "#fff"});
-      $("#social-media").css("color", "#fff");
+      $("#brutus-icon").attr("src", "images/barking-dog-512.png");
+      $("#facebook-icon").attr("src", "images/facebook-512.png");
+      $("#instagram-icon").attr("src", "images/instagram-512.png");
+      $("#twitter-icon").attr("src", "images/twitter-512.png");
+      $("#youtube-icon").attr("src", "images/youtube-512.png");
+
+    } else if ($(this).scrollTop()>=$('#quote').position().top){
+
+      navItems.forEach((item)=>{
+        item.classList.remove("selected");
+      });
+
+      $(navItems[4]).addClass("selected");
+
+      $(".navbar li>a").css({"color": "#737373", "border-color": "#737373"});
+      $("#brutus-icon").attr("src", "images/barking-dog-512-dark.png");
+      $("#facebook-icon").attr("src", "images/facebook-512-dark.png");
+      $("#instagram-icon").attr("src", "images/instagram-512-dark.png");
+      $("#twitter-icon").attr("src", "images/twitter-512-dark.png");
+      $("#youtube-icon").attr("src", "images/youtube-512-dark.png");
+
     } else if ($(this).scrollTop()>=$('#production').position().top){
 
       navItems.forEach((item)=>{
@@ -63,7 +70,12 @@ $(document).ready(()=>{
       $(navItems[4]).addClass("selected");
 
       $(".navbar li>a").css({"color": "#737373", "border-color": "#737373"});
-      $("#social-media").css("color", "#737373");
+      $("#brutus-icon").attr("src", "images/barking-dog-512-dark.png");
+      $("#facebook-icon").attr("src", "images/facebook-512-dark.png");
+      $("#instagram-icon").attr("src", "images/instagram-512-dark.png");
+      $("#twitter-icon").attr("src", "images/twitter-512-dark.png");
+      $("#youtube-icon").attr("src", "images/youtube-512-dark.png");
+
     }else if ($(this).scrollTop()>=$('#host').position().top){
 
       navItems.forEach((item)=>{
@@ -73,7 +85,12 @@ $(document).ready(()=>{
       $(navItems[3]).addClass("selected");
 
       $(".navbar li>a").css({"color": "#737373", "border-color": "#737373"});
-      $("#social-media").css("color", "#737373");
+      $("#brutus-icon").attr("src", "images/barking-dog-512-dark.png");
+      $("#facebook-icon").attr("src", "images/facebook-512-dark.png");
+      $("#instagram-icon").attr("src", "images/instagram-512-dark.png");
+      $("#twitter-icon").attr("src", "images/twitter-512-dark.png");
+      $("#youtube-icon").attr("src", "images/youtube-512-dark.png");
+
     } else if ($(this).scrollTop()>=$('#actor').position().top){
 
       navItems.forEach((item)=>{
@@ -83,7 +100,12 @@ $(document).ready(()=>{
       $(navItems[2]).addClass("selected");
 
       $(".navbar li>a").css({"color": "#fff", "border-color": "#fff"});
-      $("#social-media").css("color", "#fff");
+      $("#brutus-icon").attr("src", "images/barking-dog-512.png");
+      $("#facebook-icon").attr("src", "images/facebook-512.png");
+      $("#instagram-icon").attr("src", "images/instagram-512.png");
+      $("#twitter-icon").attr("src", "images/twitter-512.png");
+      $("#youtube-icon").attr("src", "images/youtube-512.png");
+
     } else if ($(this).scrollTop()>=$('#events').position().top){
       navItems.forEach((item)=>{
         item.classList.remove("selected");
@@ -92,11 +114,21 @@ $(document).ready(()=>{
       $(navItems[1]).addClass("selected");
 
       $(".navbar li>a").css({"color": "#fff", "border-color": "#fff"});
-      $("#social-media").css("color", "#fff");
+      $("#brutus-icon").attr("src", "images/barking-dog-512.png");
+      $("#facebook-icon").attr("src", "images/facebook-512.png");
+      $("#instagram-icon").attr("src", "images/instagram-512.png");
+      $("#twitter-icon").attr("src", "images/twitter-512.png");
+      $("#youtube-icon").attr("src", "images/youtube-512.png");
+
     } else if ($(this).scrollTop()>=$('#bio').position().top){
 
       $(".navbar li>a").css({"color": "#737373", "border-color": "#737373"});
-      $("#social-media").css("color", "#737373");
+      // $("#social-media").css("color", "#737373");
+      $("#brutus-icon").attr("src", "images/barking-dog-512-dark.png");
+      $("#facebook-icon").attr("src", "images/facebook-512-dark.png");
+      $("#instagram-icon").attr("src", "images/instagram-512-dark.png");
+      $("#twitter-icon").attr("src", "images/twitter-512-dark.png");
+      $("#youtube-icon").attr("src", "images/youtube-512-dark.png");
 
     } else {
 
@@ -107,17 +139,25 @@ $(document).ready(()=>{
       $(navItems[0]).addClass("selected");
 
       $(".navbar li>a").css({"color": "#fff", "border-color": "#fff"});
-      $("#social-media").css("color", "#fff");
+      $("#brutus-icon").attr("src", "images/barking-dog-512.png");
+      $("#facebook-icon").attr("src", "images/facebook-512.png");
+      $("#instagram-icon").attr("src", "images/instagram-512.png");
+      $("#twitter-icon").attr("src", "images/twitter-512.png");
+      $("#youtube-icon").attr("src", "images/youtube-512.png");
+
     }
   });
 
-  $(".nav-item").click((e)=>{
-    // var navItems = document.querySelectorAll("a.nav-item");
-    // console.log(navItems);
-    // navItems.forEach((item)=>{
-    //   item.classList.remove("selected");
-    // });
-    //
-    // $(e.target).addClass("selected");
-  });
+  $(".resume-icon").click(toggleIcon);
+
+  function toggleIcon(){
+    console.log(this);
+    if ($(this).text() === "add"){
+      $(this).text("remove");
+    }else {
+      $(this).text("add");
+    }
+    return;
+  }
+
 });

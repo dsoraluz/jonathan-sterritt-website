@@ -9,7 +9,8 @@ body {
 }
 
 a {
-  color: #00B7FF;
+  color: #555;
+
 }
 
 
@@ -25,6 +26,37 @@ nav {
   top: 0;
   ul{
     a{
+
+      @media (max-width: 1691px){
+        font-size: 14px;
+      }
+      @media (max-width: 1691px){
+        font-size: 13px;
+      }
+      @media (max-width: 1358px){
+        font-size: 12px;
+      }
+      @media (max-width: 1307px){
+        font-size: 11px;
+      }
+      @media (max-width: 1258px){
+        font-size: 10px;
+      }
+      @media (max-width: 1209px){
+        font-size: 9px;
+      }
+      @media (max-width: 1164px){
+        font-size: 8px;
+      }
+      @media (max-width: 1115px){
+        font-size: 7px;
+      }
+      @media (max-width: 1066px){
+        font-size: 6px;
+      }
+      @media (max-width: 1020px){
+        font-size: 5px;
+      }
       font-size: 20px;
       text-transform: uppercase;
 
@@ -78,11 +110,49 @@ nav {
   min-height: 100px;
 }
 
+.scroll-down {
+  position: absolute;
+left: calc(50% - 42px);
+right: auto;
+bottom: 20px;
+z-index: 99;
+// width: 84px;
+// font-family: "myriad-pro-condensed",sans-serif;
+font-size: 20px;
+text-align: center;
+text-transform: uppercase;
+color: #fff;
+-webkit-transition: color .314s ease;
+transition: color .314s ease;
+}
+
 #home {
   // position: relative;
   // top: 0;
-  min-height: 1000px;
+  min-height: 100vh;
   background: #1e2230 url(../images/home-background.jpg) no-repeat center bottom;
+  .home-img {
+    width: 100%;
+    margin: 0 auto;
+    align-self: center;
+
+
+    img {
+      display: block;
+      margin: 0 auto;
+      width: 100%;
+    }
+
+  }
+  .scroll-down{
+    color: #fff;
+    a {
+      color: #fff;
+    }
+    i {
+      display: block;
+    }
+  }
 
   .ability-section {
     padding: 150px 20px;
@@ -115,30 +185,57 @@ nav {
 
 #bio {
   background: #F8F8F8;
-  min-height: 750px;
+  min-height: 100vh;
+  color: #555;
 
   img {
-    width: 75%;
-    border: 10px solid #000;
+    position: relative;
+    right: 170px;
+    top: 120px;
+  }
+
+  .scroll-down {
+    color: #555;
+    a {
+      color: #555;
+    }
+    i {
+      display: block;
+    }
   }
 }
 
 #events {
   background: #add3ce;
-  min-height: 750px;
+  min-height: 100vh;
+
+  .scroll-down {
+    color: #fff;
+    a {
+      color: #fff;
+    }
+    i {
+      display: block;
+    }
+  }
 
 }
 
 #actor {
   background: #2f2f2f url(../images/host-background.jpg) no-repeat center top;
   background-size: cover;
-  min-height: 750px;
+  min-height: 100vh;
   h3 {
     color: #fff;
   }
   p {
     color: white;
 
+  }
+  img {
+    position: relative;
+    left: -400px;
+    top: 127px;
   }
 
   .resume-list {
@@ -167,7 +264,7 @@ nav {
     border-bottom: none;
 
     i {
-      color: #E63215;
+      color: #3091ce;
     }
   }
 
@@ -175,12 +272,27 @@ nav {
     color: #fff;
     border-top: 1px solid #ddd;
   }
+  .scroll-down {
+    color: #fff;
+    a {
+      color: #fff;
+    }
+    i {
+      display: block;
+    }
+  }
 }
 
 #host {
   background: #f7bdaa url(../images/actor-background.jpg) no-repeat center top;
   background-size: cover;
-  min-height: 950px;
+  min-height: 100vh;
+
+  .casting-logos {
+    img {
+      width: 150px;
+    }
+  }
 
   #microman {
     // height: 100%;
@@ -190,13 +302,23 @@ nav {
     top: 80px;
   }
 
+  .scroll-down {
+    color: #555;
+    a {
+      color: #555;
+    }
+    i {
+      display: block;
+    }
+  }
+
 }
 
 #production {
 
   background: #e5e5e5 url(../images/production-background.jpg) no-repeat center top;
   background-size: cover;
-  min-height: 780px;
+  min-height: 100vh;
 /*color: #737373;*/
 
   .photo-element {
@@ -229,7 +351,6 @@ nav {
 
   #bmp-bio {
     p {
-      margin-bottom: 40px;
       padding: 0 40px;
       color: #737373;
     }
@@ -266,7 +387,6 @@ nav {
   }
 
 
-
   #equipment-rental {
     padding: 0 40px;
     color: #737373;
@@ -290,16 +410,40 @@ nav {
     }
   }
 
+  .scroll-down {
+    color: #555;
+    a {
+      color: #555;
+    }
+    i {
+      display: block;
+    }
+  }
+
 }
 
 #quote {
   background-color: #D7D5E6;
-  min-height: 870px;
+  min-height: 100vh;
+
+  img {
+    width: 50vw;
+  }
 
   .quote-paragraph {
     line-height: 2.0;
     text-align: left;
     padding: 0 40px;
+  }
+
+  .scroll-down {
+    color: #555;
+    a {
+      color: #555;
+    }
+    i {
+      display: block;
+    }
   }
 }
 
@@ -307,7 +451,7 @@ nav {
 
 #contact {
   background: #9a9a9a;
-  min-height: 870px;
+  min-height: 100vh;
 
   img {
     width: 100%;
@@ -343,7 +487,6 @@ nav {
   }
 
   .input-field {
-    text-align: center;
     label {
       color: #434343;
     }
@@ -374,10 +517,22 @@ nav {
      border-bottom: 1px solid #555;
      box-shadow: 0 1px 0 0 #555;
    }
+
+   .scroll-down {
+     color: #555;
+     a {
+       color: #555;
+     }
+     i {
+       display: block;
+     }
+   }
 }
 
 
-body[data-scrollspy-active="actor"] .navbar-fixed ul>li>a {
-  color: #737373;
-  border-color: #737373;
+
+.modal {
+  i {
+    color:#3091ce;
+  }
 }
