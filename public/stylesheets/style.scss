@@ -421,7 +421,11 @@ nav {
 
   .casting-logos {
     img {
-      width: 75px;
+      width: 45px;
+      margin-right: 4px;
+      @media (max-width: 375px){
+        width: 41px;
+      }
     }
   }
 
