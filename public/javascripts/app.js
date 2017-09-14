@@ -151,12 +151,25 @@ $(document).ready(()=>{
   $(".resume-icon").click(toggleIcon);
 
   function toggleIcon(){
+
+    var collapsibleHeaders = document.querySelectorAll(".collapsible-header");
+
     console.log(this);
-    if ($(this).text() === "add"){
-      $(this).text("remove");
+    if ($(this).hasClass("active") === false){
+      $(this).children("i").text("remove");
     }else {
-      $(this).text("add");
+      $(this).children("i").text("add");
     }
+    // collapsibleHeaders.forEach((header)=>{
+    //   if ($(header).hasClass("active") === true){
+    //     $(header).children("i").text("remove");
+    //   } else{
+    //     $(header).children("i").text("add");
+    //   }
+    // });
+
+
+
     return;
   }
 
