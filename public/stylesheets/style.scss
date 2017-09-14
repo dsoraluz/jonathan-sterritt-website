@@ -74,6 +74,11 @@ nav {
   }
   .social-media {
 
+    @media (max-width: 992px){
+      position: absolute;
+      text-align: center;
+    }
+
     img {
       box-sizing: border-box;
       width: 10%;
@@ -230,6 +235,10 @@ nav {
     min-height: 45vh;
   }
 
+  h1 {
+    color: #555;
+  }
+
   img {
     position: absolute;
     top: 150px;
@@ -383,6 +392,10 @@ nav {
     min-height: 45vh;
   }
 
+  h1 {
+    color: #555;
+  }
+
   .credits {
     margin-top: 25px;
 
@@ -503,7 +516,11 @@ nav {
     p {
       padding: 0 40px;
       color: #737373;
+      @media (max-width: 992px){
+        padding: 0;
+      }
     }
+
   }
 
   .clip-list{
@@ -588,6 +605,10 @@ nav {
   }
   @media (max-width: 375px){
     min-height: 45vh;
+  }
+
+  h1 {
+    color: #555;
   }
 
   img {
