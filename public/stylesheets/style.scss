@@ -149,7 +149,7 @@ nav {
 #home {
   // position: relative;
   // top: 0;
-  min-height: 100vh;
+  min-height: 840px;
   background: #1e2230 url(../images/home-background.jpg) no-repeat center bottom;
 
   @media (min-width: 769px) and (max-width: 992px){
@@ -219,7 +219,7 @@ nav {
 
 #bio {
   background: #F8F8F8;
-  min-height: 100vh;
+  min-height: 740px;
   color: #555;
 
   @media (min-width: 769px) and (max-width: 992px){
@@ -241,9 +241,11 @@ nav {
 
   img {
     position: absolute;
-    top: 150px;
     left: 30px;
-    width: 768px;
+    bottom: 0px;
+    @media (min-width: 1440px){
+
+    }
   }
 
   .scroll-down {
@@ -257,9 +259,9 @@ nav {
   }
 }
 
-#events {
+#social {
   background: #add3ce;
-  min-height: 100vh;
+  min-height: 740px;
 
   @media (min-width: 769px) and (max-width: 992px){
     min-height: 50vh;
@@ -289,7 +291,7 @@ nav {
 #actor {
   background: #2f2f2f url(../images/host-background.jpg) no-repeat center top;
   background-size: cover;
-  min-height: 100vh;
+  min-height: 800px;
   @media (max-width: 992px) {
     background-image: none;
     background-color: #2f2f2f;
@@ -316,18 +318,33 @@ nav {
 
   }
   img {
-    position: relative;
-    left: -400px;
-    top: 127px;
+    position: absolute;
+    left: -230px;
+    bottom: 0px;
   }
-  @media (max-width: 1440px){
+  @media (max-width: 1440px) and (min-width: 1220px){
     img{
       position: absolute;
-      right: 683px;
+      // right: 683px;
+      left: -20%;
 
     }
   }
+  @media (max-width: 1119px){
+    img{
+      right: 200%;
+    }
+  }
 
+  @media (max-width: 1201px){
+    img{
+      right: 200%;
+    }
+  }
+
+  .carousel-slider{
+    height: 100px !important;
+  }
 
   .resume-list {
     line-height: 1.5;
@@ -363,6 +380,24 @@ nav {
     color: #fff;
     border-top: 1px solid #ddd;
   }
+
+  .casting-logos-flex {
+    display: flex;
+    justify-content: center;
+    .casting-logos {
+      img {
+        width: 45px;
+        margin-right: 4px;
+        display: inline;
+        position: static;
+        @media (max-width: 375px){
+          width: 41px;
+        }
+      }
+    }
+
+  }
+
   .scroll-down {
     color: #fff;
     a {
@@ -377,7 +412,7 @@ nav {
 #host {
   background: #f7bdaa url(../images/actor-background.jpg) no-repeat center top;
   background-size: cover;
-  min-height: 100vh;
+  min-height: 740px;
 
   @media (min-width: 769px) and (max-width: 992px){
     min-height: 50vh;
@@ -419,16 +454,6 @@ nav {
   }
 
 
-  .casting-logos {
-    img {
-      width: 45px;
-      margin-right: 4px;
-      @media (max-width: 375px){
-        width: 41px;
-      }
-    }
-  }
-
   #microman {
     position: absolute;
     margin-right: 69px;
@@ -453,14 +478,13 @@ nav {
 
 }
 
-#production.section {
-  padding-top: 15px;
-}
+
 #production {
+  font-family: "Comic Sans MS", cursive, sans-serif;
 
   background: #e5e5e5 url(../images/production-background.jpg) no-repeat center top;
   background-size: cover;
-  min-height: 100vh;
+  min-height: 740px;
 
   @media (min-width: 769px) and (max-width: 992px){
     min-height: 50vh;
@@ -514,6 +538,7 @@ nav {
   .bmp-logo {
     width: 25%;
     margin-bottom: 15px;
+    margin-top: 75px;
   }
 
   #bmp-bio {
@@ -535,6 +560,7 @@ nav {
       padding: 20px 0;
       margin: 0 0 10px;
       z-index: 10;
+      color: #fff;
     }
   }
 
@@ -596,7 +622,7 @@ nav {
 
 #quote {
   background-color: #D7D5E6;
-  min-height: 100vh;
+  min-height: 740px;
 
   @media (min-width: 769px) and (max-width: 992px){
     min-height: 50vh;
@@ -617,6 +643,9 @@ nav {
 
   img {
     width: 50vw;
+    position: absolute;
+    bottom: -2px;
+    right: 5px;
     @media(max-width: 992px){
       display: none;
     }
@@ -643,7 +672,7 @@ nav {
 
 #contact {
   background: #9a9a9a;
-  min-height: 100vh;
+  // min-height: 100vh;
 
   @media (min-width: 769px) and (max-width: 992px){
     min-height: 50vh;
