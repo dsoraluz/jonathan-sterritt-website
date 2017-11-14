@@ -183,7 +183,7 @@ $(document).ready(()=>{
 
     return;
   }
-  
+
   $(function() {
     $('a[href*=#]:not([href=#])').click(function() {
       var target = $(this.hash);
@@ -197,8 +197,8 @@ $(document).ready(()=>{
     });
   });
 
-  // $('.carousel.carousel-slider').carousel({
-  //     fullWidth: true
-  //   });
+  $('.carousel.carousel-slider').carousel({
+      fullWidth: true
+    });
 
 });

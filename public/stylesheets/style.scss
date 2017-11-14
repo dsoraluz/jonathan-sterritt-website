@@ -239,6 +239,14 @@ nav {
     color: #555;
   }
 
+  p {
+    font-size: 18px;
+    line-height: 1.5;
+    span {
+      font-weight: bold;
+    }
+  }
+
   img {
     position: absolute;
     left: 30px;
@@ -263,6 +271,19 @@ nav {
   background: #add3ce;
   min-height: 740px;
 
+  p{
+    font-size: 18px;
+    line-height: 1.5;
+    color: #fff;
+  }
+
+  a {
+    text-decoration: none;
+    span {
+      color: #F25951;
+    }
+  }
+
   @media (min-width: 769px) and (max-width: 992px){
     min-height: 50vh;
   }
@@ -275,6 +296,7 @@ nav {
   @media (max-width: 375px){
     min-height: 45vh;
   }
+
 
   .scroll-down {
     color: #fff;
@@ -315,6 +337,13 @@ nav {
   }
   p {
     color: white;
+    font-size: 18px;
+    line-height: 1.5;
+    span{
+      display: inline-block;
+      padding: 0 0 0;
+      font-weight: bold;
+    }
 
   }
   img {
@@ -414,6 +443,7 @@ nav {
   background-size: cover;
   min-height: 740px;
 
+
   @media (min-width: 769px) and (max-width: 992px){
     min-height: 50vh;
   }
@@ -429,6 +459,14 @@ nav {
 
   h1 {
     color: #555;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 1.5;
+    span {
+      font-weight: bold;
+    }
   }
 
   .credits {
@@ -480,8 +518,6 @@ nav {
 
 
 #production {
-  font-family: "Comic Sans MS", cursive, sans-serif;
-
   background: #e5e5e5 url(../images/production-background.jpg) no-repeat center top;
   background-size: cover;
   min-height: 740px;
@@ -509,6 +545,10 @@ nav {
     right: 0;
     z-index: 10;
 
+    @media (max-width: 1024px){
+      right: -155px;
+    }
+
     @media(max-width: 992px){
       display: none;
     }
@@ -530,6 +570,10 @@ nav {
     left: -100px;
     z-index: 8;
 
+    @media (max-width: 1024px){
+      left: -255px;
+    }
+
     @media(max-width: 992px){
       display: none;
     }
@@ -541,10 +585,14 @@ nav {
     margin-top: 75px;
   }
 
+
   #bmp-bio {
     p {
-      padding: 0 40px;
+
+      padding: 0 19px;
       color: #737373;
+      font-size: 18px;
+      line-height: 1.5;
       @media (max-width: 992px){
         padding: 0;
       }
@@ -561,6 +609,7 @@ nav {
       margin: 0 0 10px;
       z-index: 10;
       color: #fff;
+      font-size: 18px;
     }
   }
 
@@ -600,7 +649,7 @@ nav {
     color: #737373;
 
     p{
-      font-size: 15px;
+      font-size: 18px;
     }
 
     a {
@@ -655,6 +704,13 @@ nav {
     line-height: 2.0;
     text-align: left;
     padding: 0 40px;
+    font-size: 50px;
+    line-height: 1.5;
+    color: #555;
+
+    .quoter {
+      text-align: right;
+    }
   }
 
   .scroll-down {
@@ -780,6 +836,27 @@ nav {
        display: block;
      }
    }
+}
+
+#featured-modal {
+  height: 800px;
+
+  .carousel.carousel-slider {
+    min-height: 690px;
+    .video-container {
+      margin: 45px 0;
+    }
+  }
+}
+
+#seasonOne-modal {
+  height: 500px;
+  .carousel.carousel-slider {
+    min-height: 380px;
+    .video-container {
+      margin: 45px 0;
+    }
+  }
 }
 
 
