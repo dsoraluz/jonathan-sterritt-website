@@ -201,4 +201,6 @@ $(document).ready(()=>{
       fullWidth: true
     });
 
+  $('.materialboxed').materialbox();
+
 });
