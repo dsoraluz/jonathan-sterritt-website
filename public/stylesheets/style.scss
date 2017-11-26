@@ -13,6 +13,10 @@ a {
 
 }
 
+p {
+  font-weight: bold;
+}
+
 
 .section {
     position: relative;
@@ -355,7 +359,7 @@ nav {
   img {
     position: absolute;
     left: -230px;
-    bottom: 0px;
+    top: 100px;
   }
   @media (max-width: 1440px) and (min-width: 1220px){
     img{
@@ -414,6 +418,10 @@ nav {
     }
   }
 
+  .collapsible-header-end {
+    border-bottom: 1px solid #ddd;
+  }
+
   .collapsible-body {
     color: #fff;
     border-top: 1px solid #ddd;
@@ -425,7 +433,7 @@ nav {
     .casting-logos {
       img {
         width: 45px;
-        margin-right: 4px;
+        margin: 0 10px;
         display: inline;
         position: static;
         @media (max-width: 375px){
@@ -486,6 +494,7 @@ nav {
       border-left: 0;
       border-right: 0;
       box-shadow: none;
+      margin: 40px 0;
 
     }
 
@@ -505,7 +514,7 @@ nav {
     position: absolute;
     margin-right: 69px;
     right: 0;
-    top: 80px;
+    bottom: 0px;
     width: 20%;
 
     @media(max-width: 992px){
@@ -589,8 +598,8 @@ nav {
   }
 
   .bmp-logo {
-    width: 25%;
-    margin-bottom: 15px;
+    width: 35%;
+    margin-bottom: 25px;
     margin-top: 75px;
   }
 
