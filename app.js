@@ -31,7 +31,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(layouts);
 
 const index = require('./routes/index');
+const mailRoutes = require('./routes/mail');
 app.use('/', index);
+app.use('/', mailRoutes);
 
 // catch 404 and forward to error handler
 app.use((req, res, next) => {
