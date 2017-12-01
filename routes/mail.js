@@ -5,7 +5,8 @@ const mailRouter = express.Router();
 
 mailRouter.post('/contact', (req, res, next)=>{
 
-let toFirstName = req.body.name;
+let name = req.body.name;
+
 let email = req.body.email;
 
 let message = req.body.message;
@@ -19,7 +20,7 @@ let transporter = nodemailer.createTransport({
 });
 
 let mailOptions = {
-  from: `A new message from ${name} (JonathanSterritt.com)<${email}>`,
+  from: `A new message from ${name}<${email}>`,
   to: `${process.env.GMAIL_USERNAME}`,
   subject: `Someone is looking for Jonathan Sterritt.`,
   html: `${message}`
@@ -33,9 +34,15 @@ transporter.sendMail(mailOptions, (err, info)=>{
     } else {
       console.log('Message %s sent: %s', info.messageId, info.response);
       transporter.close();
-      res.redirect('/');
     }
   });
+  res.redirect('/message-confirmation');
+});
+
+
+mailRouter.get('/message-confirmation', (req,res,next)=>{
+  res.render('message-confirmation');
+
 });
 
 module.exports = mailRouter;
