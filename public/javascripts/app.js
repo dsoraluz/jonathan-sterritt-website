@@ -45,14 +45,14 @@ $(document).ready(()=>{
 
       $(navItems[4]).addClass("selected");
 
-      $(".navbar li>a").css({"color": "#737373", "border-color": "#737373"});
+      $(".navbar li>a").css({"color": "#555", "border-color": "#737373"});
       $("#brutus-icon").attr("src", "images/barking-dog-512-dark.png");
       $("#facebook-icon").attr("src", "images/facebook-512-dark.png");
       $("#instagram-icon").attr("src", "images/instagram-512-dark.png");
       $("#twitter-icon").attr("src", "images/twitter-512-dark.png");
       $("#youtube-icon").attr("src", "images/youtube-512-dark.png");
 
-      $(".button-collapse>i").css("color", "#737373");
+      $(".button-collapse>i").css("color", "#555");
 
 
     } else if ($(this).scrollTop()>=$('#production').position().top){
@@ -63,14 +63,14 @@ $(document).ready(()=>{
 
       $(navItems[4]).addClass("selected");
 
-      $(".navbar li>a").css({"color": "#737373", "border-color": "#737373"});
+      $(".navbar li>a").css({"color": "#555", "border-color": "#737373"});
       $("#brutus-icon").attr("src", "images/barking-dog-512-dark.png");
       $("#facebook-icon").attr("src", "images/facebook-512-dark.png");
       $("#instagram-icon").attr("src", "images/instagram-512-dark.png");
       $("#twitter-icon").attr("src", "images/twitter-512-dark.png");
       $("#youtube-icon").attr("src", "images/youtube-512-dark.png");
 
-      $(".button-collapse>i").css("color", "#737373");
+      $(".button-collapse>i").css("color", "#555");
 
 
     }else if ($(this).scrollTop()>=$('#host').position().top){
@@ -81,14 +81,14 @@ $(document).ready(()=>{
 
       $(navItems[3]).addClass("selected");
 
-      $(".navbar li>a").css({"color": "#737373", "border-color": "#737373"});
+      $(".navbar li>a").css({"color": "#555", "border-color": "#737373"});
       $("#brutus-icon").attr("src", "images/barking-dog-512-dark.png");
       $("#facebook-icon").attr("src", "images/facebook-512-dark.png");
       $("#instagram-icon").attr("src", "images/instagram-512-dark.png");
       $("#twitter-icon").attr("src", "images/twitter-512-dark.png");
       $("#youtube-icon").attr("src", "images/youtube-512-dark.png");
 
-      $(".button-collapse>i").css("color", "#737373");
+      $(".button-collapse>i").css("color", "#555");
 
 
     } else if ($(this).scrollTop()>=$('#actor').position().top){
@@ -129,7 +129,7 @@ $(document).ready(()=>{
 
     } else if ($(this).scrollTop()>=$('#bio').position().top){
 
-      $(".navbar li>a").css({"color": "#737373", "border-color": "#737373"});
+      $(".navbar li>a").css({"color": "#555", "border-color": "#737373"});
 
       $("#brutus-icon").attr("src", "images/barking-dog-512-dark.png");
       $("#facebook-icon").attr("src", "images/facebook-512-dark.png");
@@ -137,7 +137,7 @@ $(document).ready(()=>{
       $("#twitter-icon").attr("src", "images/twitter-512-dark.png");
       $("#youtube-icon").attr("src", "images/youtube-512-dark.png");
 
-      $(".button-collapse>i").css("color", "#737373");
+      $(".button-collapse>i").css("color", "#555");
 
     } else {
 
@@ -198,9 +198,26 @@ $(document).ready(()=>{
   });
 
   $('.carousel.carousel-slider').carousel({
-      fullWidth: true
+      fullWidth: true,
+      indicators: false
     });
 
+    //Call to function that handles carousel autoplay.
+    autoplay();
+    function autoplay() {
+        $('#host-action-loop').carousel('next');
+        setTimeout(autoplay, 4000);
+    }
+
+
+
+
   $('.materialboxed').materialbox();
+
+$('.materialboxed').click(()=>{
+  $('.video-container').toggleClass("hide-video-container");
+});
+
+
 
 });

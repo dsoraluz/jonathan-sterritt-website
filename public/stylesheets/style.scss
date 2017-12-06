@@ -31,41 +31,12 @@ nav {
 
   .nav-wrapper {
     .container {
-      width: 90%;
+      width: 100%;
     }
   }
   ul{
     a{
-
-      @media (max-width: 1691px){
-        font-size: 14px;
-      }
-
-      @media (max-width: 1358px){
-        font-size: 12px;
-      }
-      @media (max-width: 1307px){
-        font-size: 11px;
-      }
-      @media (max-width: 1258px){
-        font-size: 10px;
-      }
-      @media (max-width: 1209px){
-        font-size: 9px;
-      }
-      @media (max-width: 1164px){
-        font-size: 8px;
-      }
-      @media (max-width: 1115px){
-        font-size: 7px;
-      }
-      @media (max-width: 1066px){
-        font-size: 6px;
-      }
-      @media (max-width: 1020px){
-        font-size: 5px;
-      }
-      font-size: 20px;
+      font-size: 14px;
       text-transform: uppercase;
 
     }
@@ -91,7 +62,7 @@ nav {
 
     img {
       box-sizing: border-box;
-      width: 10%;
+      width: 13%;
       display: inline;
       padding: 5px;
       margin: 15px 0 0 0;
@@ -159,7 +130,7 @@ nav {
 #home {
   // position: relative;
   // top: 0;
-  min-height: 840px;
+  min-height: 950px;
   background: #1e2230 url(../images/home-background.jpg) no-repeat center bottom;
 
   @media (min-width: 769px) and (max-width: 992px){
@@ -175,6 +146,31 @@ nav {
     min-height: 45vh;
   }
 
+  .jonathan-main {
+    position: relative;
+    left: 0;
+    background: url("../images/jonathan-main-black.png") no-repeat center bottom;
+    width: 100%;
+    height: 750px;
+    top: 0;
+
+    @media screen and (max-height: 765px) and (min-width: 992px){
+      height: 772px;
+    }
+
+    @media screen and (max-height: 1060px) and (min-width: 768px){
+      background-size: cover;
+      background-position: center top;
+    }
+
+    @media screen and (min-width: 320px){
+      width: 596px;
+      background-position: center center;
+      margin: 0 auto;
+      top: 60px;
+    }
+  }
+
   .home-img {
     width: 100%;
     margin: 0 auto;
@@ -184,7 +180,7 @@ nav {
     img {
       display: block;
       margin: 0 auto;
-      width: 100%;
+      width: 60%;
     }
 
   }
@@ -229,7 +225,7 @@ nav {
 
 #bio {
   background: #F8F8F8;
-  min-height: 740px;
+  min-height: 900px;
   color: #555;
 
   @media (min-width: 769px) and (max-width: 992px){
@@ -259,10 +255,23 @@ nav {
 
   img {
     position: absolute;
-    left: 30px;
-    bottom: 0px;
-    @media (min-width: 1440px){
+    width: 29vw;
+    left: 150px;
+    bottom: -4px;
 
+    @media (max-width: 1700px) and (min-width: 1601px){
+      width: 35vw;
+      left: 150px;
+    }
+
+    @media (max-width: 1600px) and (min-width: 1581px){
+      width: 32vw;
+      left: 150px;
+
+    }
+    @media (max-width: 1580px){
+      width: 38vw;
+      left: 60px;
     }
   }
 
@@ -358,8 +367,12 @@ nav {
   }
   img {
     position: absolute;
-    left: -230px;
-    top: 100px;
+    left: -92px;
+    top: 114px;
+    @media (max-width: 1024px){
+      left: -410px;
+      top: 214px;
+    }
   }
   @media (max-width: 1440px) and (min-width: 1220px){
     img{
@@ -386,6 +399,15 @@ nav {
     img {
       position: static;
     }
+    .indicators {
+      .indicator-item {
+        display: none;
+      }
+    }
+  }
+
+  .hide-video-container {
+    z-index: -1;
   }
 
   .resume-list {
@@ -460,7 +482,7 @@ nav {
   background: #f7bdaa url(../images/actor-background.jpg) no-repeat center top;
   background-size: cover;
   min-height: 740px;
-
+  color: #555;
 
   @media (min-width: 769px) and (max-width: 992px){
     min-height: 50vh;
@@ -477,6 +499,20 @@ nav {
 
   h1 {
     color: #555;
+  }
+
+  .carousel {
+    width: 550px;
+    height: 590px !important;
+
+    img {
+      width: 72%;
+    }
+    .indicators {
+      .indicator-item {
+        display: none;
+      }
+    }
   }
 
   p {
@@ -502,6 +538,7 @@ nav {
     .collapsible-header {
       background-color: transparent;
       border-bottom: 1px solid #555;
+      text-align: center;
     }
 
     .collapsible-body {
@@ -711,13 +748,31 @@ nav {
   }
 
   img {
-    width: 50vw;
+    width: 25vw;
     position: absolute;
-    bottom: -2px;
-    right: 5px;
+    bottom: -4px;
+    right: 90px;
+
+    @media (max-width: 1700px) and (min-width: 1601px){
+      width: 24vw;
+      right: 150px;
+    }
+
+    @media (max-width: 1600px) and (min-width: 1581px){
+      width: 25vw;
+      right: 150px;
+
+    }
+    @media (max-width: 1580px){
+      width: 28vw;
+      right: 170px;
+    }
+
     @media(max-width: 992px){
       display: none;
     }
+
+
   }
 
   .quote-paragraph {
@@ -727,6 +782,10 @@ nav {
     font-size: 50px;
     line-height: 1.5;
     color: #555;
+
+    span {
+      font-weight: 100;
+    }
 
     .quoter {
       text-align: right;
@@ -763,8 +822,15 @@ nav {
     min-height: 45vh;
   }
 
+  h5 {
+    color: #434343;
+    font-weight: bold;
+  }
+
   img {
     width: 50vh;
+    margin: 0 auto;
+    display: block;
     @media(max-width: 992px){
       display: none;
     }
@@ -900,4 +966,9 @@ nav {
   i {
     color:#3091ce;
   }
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
 }
