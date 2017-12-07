@@ -38,7 +38,7 @@ nav {
     a{
       font-size: 14px;
       text-transform: uppercase;
-
+      font-weight: bold;
     }
     a:hover {
       background-color: transparent;
@@ -367,18 +367,26 @@ nav {
   }
   img {
     position: absolute;
-    left: -92px;
+    left: -260px;
     top: 114px;
-    @media (max-width: 1024px){
+    @media (max-width: 1219px) and (min-width: 1024px){
       left: -410px;
       top: 214px;
     }
   }
-  @media (max-width: 1440px) and (min-width: 1220px){
+  @media (max-width: 1340px) and (min-width: 1220px){
     img{
       position: absolute;
       // right: 683px;
-      left: -20%;
+      left: -345px;
+
+    }
+  }
+  @media (max-width: 1440px) and (min-width: 1341px){
+    img{
+      position: absolute;
+      // right: 683px;
+      left: -281px;
 
     }
   }
@@ -601,7 +609,7 @@ nav {
     right: 0;
     z-index: 10;
 
-    @media (max-width: 1024px){
+    @media (min-width: 1024px){
       right: -155px;
     }
 
@@ -626,7 +634,7 @@ nav {
     left: -100px;
     z-index: 8;
 
-    @media (max-width: 1024px){
+    @media (min-width: 1024px){
       left: -255px;
     }
 
@@ -779,17 +787,18 @@ nav {
     line-height: 2.0;
     text-align: left;
     padding: 0 40px;
-    font-size: 50px;
+    font-size: 2.5vw;
     line-height: 1.5;
     color: #555;
 
     span {
       font-weight: 100;
+      .quote {
+        margin-right: 30px;
+      }
     }
 
-    .quoter {
-      text-align: right;
-    }
+
   }
 
   .scroll-down {
@@ -828,9 +837,15 @@ nav {
   }
 
   img {
-    width: 50vh;
+    width: 20vw;
     margin: 0 auto;
     display: block;
+
+  }
+
+  .contact-img {
+    width: 35vw;
+    border: 5px solid #555;
     @media(max-width: 992px){
       display: none;
     }
