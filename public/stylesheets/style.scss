@@ -706,11 +706,14 @@ nav {
     padding: 0 40px;
     color: #737373;
 
+
     .equipment-list li{
       text-align: left;
       line-height: 1.5;
     }
   }
+
+
 
   #bmp-contact {
     margin-top: 30px;
@@ -977,6 +980,14 @@ nav {
   }
   .carousel .indicators .indicator-item {
     background-color: #b9b9b9 !important;
+  }
+}
+
+#equipment-modal {
+  .bmp-logo {
+    display: block;
+    width: 45%;
+    margin: 25px auto;
   }
 }
 
