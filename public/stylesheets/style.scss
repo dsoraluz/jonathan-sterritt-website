@@ -352,7 +352,7 @@ nav {
   }
 
   .actor-background{
-    width: 80%;
+    width: 40%;
   }
 
   h3 {
@@ -371,10 +371,10 @@ nav {
   }
   img {
     position: absolute;
-    left: -458px;
+    left: -31px;
     bottom: 0;
     @media (max-width: 1219px) and (min-width: 1024px){
-      left: -410px;
+      left: -28px;
       top: 214px;
     }
   }
@@ -382,7 +382,7 @@ nav {
     img{
       position: absolute;
       // right: 683px;
-      left: -345px;
+      left: -20px;
 
     }
   }
@@ -390,7 +390,7 @@ nav {
     img{
       position: absolute;
       // right: 683px;
-      left: -281px;
+      left: -18px;
 
     }
   }
