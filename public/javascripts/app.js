@@ -116,20 +116,20 @@ $(document).ready(()=>{
 
       $(navItems[1]).addClass("selected");
 
-      $(".navbar li>a").css({"color": "#fff", "border-color": "#fff"});
+      $(".navbar li>a").css({"color": "#555", "border-color": "#555"});
 
-      $("#brutus-icon").attr("src", "images/barking-dog-512.png");
-      $("#facebook-icon").attr("src", "images/facebook-512.png");
-      $("#instagram-icon").attr("src", "images/instagram-512.png");
-      $("#twitter-icon").attr("src", "images/twitter-512.png");
-      $("#youtube-icon").attr("src", "images/youtube-512.png");
+      $("#brutus-icon").attr("src", "images/barking-dog-512-dark.png");
+      $("#facebook-icon").attr("src", "images/facebook-512-dark.png");
+      $("#instagram-icon").attr("src", "images/instagram-512-dark.png");
+      $("#twitter-icon").attr("src", "images/twitter-512-dark.png");
+      $("#youtube-icon").attr("src", "images/youtube-512-dark.png");
 
-      $(".button-collapse>i").css("color", "#fff");
+      $(".button-collapse>i").css("color", "#555");
 
 
     } else if ($(this).scrollTop()>=$('#bio').position().top){
 
-      $(".navbar li>a").css({"color": "#555", "border-color": "#737373"});
+      $(".navbar li>a").css({"color": "#555", "border-color": "#555"});
 
       $("#brutus-icon").attr("src", "images/barking-dog-512-dark.png");
       $("#facebook-icon").attr("src", "images/facebook-512-dark.png");

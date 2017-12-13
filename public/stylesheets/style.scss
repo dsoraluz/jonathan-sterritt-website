@@ -147,34 +147,38 @@ nav {
   }
 
   .jonathan-main {
-    position: relative;
-    left: 0;
-    background: url("../images/jonathan-main-black.png") no-repeat center bottom;
-    width: 100%;
-    height: 750px;
-    top: 0;
-
-    @media screen and (max-height: 765px) and (min-width: 992px){
-      height: 772px;
-    }
-
-    @media screen and (max-height: 1060px) and (min-width: 768px){
-      background-size: cover;
-      background-position: center top;
-    }
-
-    @media screen and (min-width: 320px){
-      width: 596px;
-      background-position: center center;
-      margin: 0 auto;
-      top: 60px;
-    }
+    color: #fff;
+    // position: relative;
+    // left: 0;
+    // background: url("../images/jonathan-main-black.png") no-repeat center bottom;
+    // width: 100%;
+    // height: 750px;
+    // top: 0;
+    //
+    // @media screen and (max-height: 765px) and (min-width: 992px){
+    //   height: 772px;
+    // }
+    //
+    // @media screen and (max-height: 1060px) and (min-width: 768px){
+    //   background-size: cover;
+    //   background-position: center top;
+    // }
+    //
+    // @media screen and (min-width: 320px){
+    //   width: 596px;
+    //   background-position: center center;
+    //   margin: 0 auto;
+    //   top: 60px;
+    // }
   }
 
   .home-img {
-    width: 100%;
-    margin: 0 auto;
-    align-self: center;
+    padding-top: 150px;
+    border: 5px solid #fff;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 
     img {
@@ -293,7 +297,7 @@ nav {
   p{
     font-size: 18px;
     line-height: 1.5;
-    color: #f1f1f1;
+    color: #555;
   }
 
   a {
@@ -352,7 +356,7 @@ nav {
   }
 
   .actor-background{
-    width: 40%;
+    width: 30%;
   }
 
   h3 {
@@ -371,18 +375,18 @@ nav {
   }
   img {
     position: absolute;
-    left: -31px;
-    bottom: 0;
+    left: 132px;
+    bottom: -7px;
     @media (max-width: 1219px) and (min-width: 1024px){
-      left: -28px;
-      top: 214px;
+      width: 40% !important;
+      left: -21px;
     }
   }
   @media (max-width: 1340px) and (min-width: 1220px){
     img{
       position: absolute;
       // right: 683px;
-      left: -20px;
+      left: 109px;
 
     }
   }
@@ -390,7 +394,7 @@ nav {
     img{
       position: absolute;
       // right: 683px;
-      left: -18px;
+      left: 117px;
 
     }
   }
@@ -402,12 +406,38 @@ nav {
 
   @media (max-width: 1201px){
     img{
-      right: 200%;
+      width: 40% !important;
+      left: -22px;
     }
   }
 
+  @media (max-width: 992px){
+    img{
+      display: none;
+    }
+  }
+
+
+
+  .scroll-down {
+    color: #fff;
+    a {
+      color: #fff;
+    }
+    i {
+      display: block;
+    }
+  }
+}
+
+#actor-portfolio {
+  background: #2f2f2f url(../images/actor-background-flipped.jpg) no-repeat center top;
+
+  h2{
+    color: #fff;
+  }
   .carousel-slider{
-    min-height: 140px;
+    min-height: 200px;
     img {
       position: static;
     }
@@ -479,16 +509,9 @@ nav {
 
   }
 
-  .scroll-down {
-    color: #fff;
-    a {
-      color: #fff;
-    }
-    i {
-      display: block;
-    }
-  }
 }
+
+
 
 #host {
   background: #f7bdaa url(../images/actor-background.jpg) no-repeat center top;
@@ -562,10 +585,22 @@ nav {
 
   #microman {
     position: absolute;
+    margin-left: 69px;
+    left: -135px;
+    bottom: -112px;
+    width: 42%;
+
+    @media(max-width: 992px){
+      display: none;
+    }
+  }
+
+  #microman-2 {
+    position: absolute;
     margin-right: 69px;
-    right: -125px;
+    right: -60px;
     bottom: -66px;
-    width: 45%;
+    width: 25%;
 
     @media(max-width: 992px){
       display: none;
@@ -648,9 +683,9 @@ nav {
   }
 
   .bmp-logo {
-    width: 45%;
+    width: 55%;
     margin-bottom: 25px;
-    margin-top: 75px;
+    margin-top: 65px;
   }
 
 
@@ -851,9 +886,24 @@ nav {
 
   }
 
+
   .contact-img {
-    width: 35vw;
-    border: 5px solid #555;
+    width: 32%;
+    position: absolute;
+    bottom: -3px;
+    left: -29px;
+
+    @media(max-width: 1770) and (min-width: 1561px){
+      width: 35%;
+    }
+
+    @media(max-width: 1560) and (min-width: 1388px){
+      width: 39%;
+    }
+
+    @media(max-width: 1024px) and (min-width: 993px){
+      width: 45%;
+    }
     @media(max-width: 992px){
       display: none;
     }
