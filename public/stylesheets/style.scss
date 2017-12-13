@@ -433,9 +433,10 @@ nav {
 #actor-portfolio {
   background: #2f2f2f url(../images/actor-background-flipped.jpg) no-repeat center top;
 
-  h2{
+  h2, h3{
     color: #fff;
   }
+
   .carousel-slider{
     min-height: 200px;
     img {
