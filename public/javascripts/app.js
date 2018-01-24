@@ -37,24 +37,6 @@ $(document).ready(()=>{
       $(".button-collapse>i").css("color", "#fff");
 
 
-    } else if ($(this).scrollTop()>=$('#quote').position().top){
-
-      navItems.forEach((item)=>{
-        item.classList.remove("selected");
-      });
-
-      $(navItems[4]).addClass("selected");
-
-      $(".navbar li>a").css({"color": "#555", "border-color": "#737373"});
-      $("#brutus-icon").attr("src", "images/barking-dog-512-dark.png");
-      $("#facebook-icon").attr("src", "images/facebook-512-dark.png");
-      $("#instagram-icon").attr("src", "images/instagram-512-dark.png");
-      $("#twitter-icon").attr("src", "images/twitter-512-dark.png");
-      $("#youtube-icon").attr("src", "images/youtube-512-dark.png");
-
-      $(".button-collapse>i").css("color", "#555");
-
-
     } else if ($(this).scrollTop()>=$('#production').position().top){
 
       navItems.forEach((item)=>{
