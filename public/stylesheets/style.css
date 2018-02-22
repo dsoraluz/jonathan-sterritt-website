@@ -276,24 +276,38 @@ nav .social-media img {
   bottom: -4px;
 }
 
-@media (max-width: 1700px) and (min-width: 1601px) {
+@media (min-width: 1601px) {
   #bio img {
-    width: 35vw;
-    left: 150px;
+    width: 30vw;
+    left: 115px;
   }
 }
 
 @media (max-width: 1600px) and (min-width: 1581px) {
   #bio img {
-    width: 32vw;
-    left: 150px;
+    width: 33vw;
+    left: 115px;
   }
 }
 
-@media (max-width: 1580px) {
+@media (max-width: 1580px) and (min-width: 1401px) {
   #bio img {
-    width: 38vw;
-    left: 60px;
+    width: 35vw;
+    left: 55px;
+  }
+}
+
+@media (max-width: 1400px) and (min-width: 1216px) {
+  #bio img {
+    width: 40vw;
+    left: 15px;
+  }
+}
+
+@media (max-width: 1215px) {
+  #bio img {
+    width: 46vw;
+    left: -2px;
   }
 }
 
@@ -722,7 +736,7 @@ nav .social-media img {
   z-index: 10;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 993px) {
   #production #camera {
     right: -155px;
   }
@@ -752,7 +766,7 @@ nav .social-media img {
   z-index: 8;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 993px) {
   #production #microphone {
     left: -255px;
   }
@@ -938,9 +952,20 @@ nav .social-media img {
 
 #contact {
   background: #9a9a9a;
-  min-height: 925px;
   /* label focus color */
   /* label underline focus color */
+}
+
+@media (min-width: 1400px) {
+  #contact {
+    min-height: 925px;
+  }
+}
+
+@media (min-width: 1060px) and (max-width: 1399px) {
+  #contact {
+    min-height: 725px;
+  }
 }
 
 @media (min-width: 769px) and (max-width: 992px) {
@@ -991,7 +1016,7 @@ nav .social-media img {
 }
 
 #contact .contact-img {
-  width: 32%;
+  width: 35vw;
   position: absolute;
   bottom: -3px;
   left: -29px;
