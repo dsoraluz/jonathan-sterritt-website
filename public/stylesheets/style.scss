@@ -54,11 +54,31 @@ nav {
 
   }
   .social-media {
-
+    text-align: center;
     @media (max-width: 992px){
-      position: absolute;
-      text-align: center;
+      margin-left: 25% !important;
     }
+    @media (max-width: 646px){
+      width: 30% !important;
+    }
+    @media (max-width: 557px){
+      width: 35% !important;
+    }
+    @media (max-width: 478px){
+      width: 40% !important;
+    }
+    @media (max-width: 418px){
+      width: 45% !important;
+    }
+    @media (max-width: 371px){
+      width: 50% !important;
+    }
+    @media (max-width: 333px){
+      width: 55% !important;
+    }
+    @media (max-width: 331px){
+      width: 52% !important;
+    }    
 
     img {
       box-sizing: border-box;
@@ -68,18 +88,18 @@ nav {
       margin: 15px 0 0 0;
 
       @media (max-width: 992px){
-        width: 18%;
+        width: 15%;
       }
       @media (max-width: 761px){
-        width: 16%;
+        width: 18%;
       }
 
-      @media (max-width: 600px){
-        width: 8%;
+      @media (max-width: 690px){
+        width: 18%;
       }
 
       @media (max-width: 375px){
-        width: 10%;
+        width: 18%;
       }
 
     }
